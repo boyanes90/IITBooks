@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style parent="@android:style/Theme" name="my_theme">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>
+

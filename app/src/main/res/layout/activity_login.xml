@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip"
+    android:id="@+id/layout1"
+    android:background="@drawable/background"
+
+
+    android:weightSum="1">
+    <!--  Logo -->
+
+    <ImageView android:layout_height="170dp"
+        android:src="@drawable/iit_logo"
+        android:id="@+id/img"
+        android:layout_width="330dip"
+        android:layout_gravity="center_horizontal">
+    </ImageView>
+
+    <!--  Email Label -->
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewUser"
+        android:textColor="#D1262E"
+        android:text="CWID"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="25dip"
+        />
+
+    <EditText android:layout_width="200dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"
+        android:id="@+id/edusuario"
+        android:background="@drawable/round"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <!--  Password Label -->
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPass"
+        android:textColor="#D1262E"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Password"/>
+
+    <EditText android:layout_width="200dip"
+        android:layout_height="30dip"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:password="true"
+        android:id="@+id/edpassword"
+        android:background="@drawable/round"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <!-- Login button -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dip"
+        android:text="Login"
+        android:id="@+id/Blogin"
+        android:background="@drawable/button2"
+        android:layout_gravity="center_horizontal" />
+
+    <Button android:id="@+id/link_to_register"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Sign up"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Link to Registration Screen -->
+
+</LinearLayout>

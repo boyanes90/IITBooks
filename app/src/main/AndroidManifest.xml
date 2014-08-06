@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.borjayanes.iitbooks" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iit_logo2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.borjayanes.iitbooks.SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:icon="@drawable/iit_logo2"
+            android:label="IIT Bookstore" >
+         </activity>
+        <activity
+            android:name=".SpinnerActivity"
+            android:label="Search Materials"
+            android:icon="@drawable/find">
+        </activity>
+        <activity
+            android:name=".BooksActivity"
+            android:icon="@drawable/catalog"
+            android:label="Catalog" >
+        </activity>
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:icon="@drawable/cart"
+            android:label=" Shopping Cart" >
+        </activity>
+        <activity
+            android:name=".BookDetailsActivity"
+            android:icon="@drawable/details"
+            android:label=" Book Details" >
+        </activity>
+        <activity
+            android:name=".CheckoutActivity"
+            android:icon="@drawable/visa"
+            android:label="Checkout" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

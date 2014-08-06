@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconDetails"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameDetails"
+        android:textStyle="bold"
+        android:layout_below="@+id/iconDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/authorDetails"
+        android:layout_below="@+id/nameDetails"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPrice"
+        android:layout_below="@+id/authorDetails"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescription"
+            android:textStyle="italic"
+            android:layout_below="@+id/textPrice"
+            android:layout_centerHorizontal="true"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip" />
+
+        <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/button"
+        android:id="@+id/addCart"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dip" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Catalog"
+        android:background="@drawable/button2"
+        android:id="@+id/continueShopping"
+        android:layout_below="@+id/textDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dip" />
+
+    </RelativeLayout>
+</ScrollView>
